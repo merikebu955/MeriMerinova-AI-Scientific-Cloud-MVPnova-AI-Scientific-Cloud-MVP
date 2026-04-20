@@ -1,11 +1,43 @@
-<div align="center">
+# 🚀 Merinova AI — Scientific Cloud MVP
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Merinova AI is an high-performance computing (HPC) and artificial intelligence research platform designed to make complex scientific simulations as accessible as a chat interface.
 
-  <h1>Built with AI Studio</h2>
+## 🧠 Core Features
+- **AI Research Assistant**: A localized scientific brain powered by LLMs (GPT-4/Gemini) to explain physics and generate simulation inputs.
+- **HPC Simulation Engine**: Native integration for Quantum ESPRESSO, LAMMPS, and GROMACS.
+- **Distributed Job System**: Cloud-native job queue built for Kubernetes and AWS.
+- **Real-time SaaS Dashboard**: A futuristic monitoring interface for simulation progress and system telemetry.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 🏗️ Architecture
+- **Frontend**: React 18, Tailwind CSS, Framer Motion (Vite).
+- **Backend**: Node.js/Express with integrated AI and simulation controllers.
+- **Compute**: Kubernetes (K8s) for containerized HPC workloads.
+- **Infrastructure**: Terraform/EKS for scalable cloud deployment.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 🚀 Getting Started
 
-</div>
+### 1. Local Development
+```bash
+# Install dependencies
+npm install
+
+# Start the full-stack system
+npm run dev
+```
+
+### 2. Docker Execution
+```bash
+docker build -t merinova/api .
+docker run -p 3000:3000 merinova/api
+```
+
+### 3. Kubernetes Deployment
+```bash
+kubectl apply -f k8s/
+```
+
+## 🌍 Vision
+To democratize scientific research by providing an intuitive, AI-powered layer over the world's most powerful computational engines.
+
+---
+© 2026 Merinova AI | Merikeb Gashu

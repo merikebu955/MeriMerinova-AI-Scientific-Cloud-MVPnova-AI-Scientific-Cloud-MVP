@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: merinova-api
+  labels:
+    app: merinova-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: merinova-api
+  template:
+    metadata:
+      labels:
+        app: merinova-api
+    spec:
+      containers:
+      - name: api
+        image: merinova/api:latest
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - secretRef:
+            name: merinova-secrets
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: merinova-api-service
+spec:
+  selector:
+    app: merinova-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: LoadBalancer

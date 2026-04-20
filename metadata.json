@@ -1,0 +1,9 @@
+{
+  "name": "Merinova AI — Scientific Cloud MVP",
+  "description": "A startup-ready MVP for a high-performance scientific cloud. Featuring AI-powered research assistance, HPC simulation job management (Quantum ESPRESSO, LAMMPS, GROMACS), and a SaaS dashboard for distributed scientific computing.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": []
+}
